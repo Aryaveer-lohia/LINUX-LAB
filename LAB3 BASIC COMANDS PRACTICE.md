@@ -15,7 +15,7 @@ pwd
 📌 Output example:
 
 ```
-/Users/yourname/projects
+/c/Users/lohia/OneDrive/Desktop/UPES/LINUX LAB/LINUX-LAB
 ```
 
 ---
@@ -26,7 +26,29 @@ Lists files and folders in the current directory.
 
 ```bash
 ls
+LAB3 BASIC COMANDS PRACTICE.md
 ```
+```bash
+ls -l
+Example:
+total 4
+-rw-r--r-- 1 lohia 197609 3376 Aug 16 00:45 'LAB3 BASIC COMANDS PRACTICE.md'
+```
+```bash
+ls -a
+Example:
+ ./   ../   .git/  'LAB3 BASIC COMANDS PRACTICE.md'
+```
+```bash
+ls -la
+Example:
+total 8
+drwxr-xr-x 1 lohia 197609    0 Aug 16 00:45  ./
+drwxr-xr-x 1 lohia 197609    0 Aug 16 00:44  ../
+drwxr-xr-x 1 lohia 197609    0 Aug 16 00:46  .git/
+-rw-r--r-- 1 lohia 197609 3376 Aug 16 00:45 'LAB3 BASIC COMANDS PRACTICE.md'
+```
+
 
 * `ls -l` → Detailed list (permissions, size, date)
 * `ls -a` → Shows hidden files (those starting with `.`)
