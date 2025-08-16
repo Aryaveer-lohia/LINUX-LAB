@@ -245,3 +245,7 @@ mkdir test && cd test && touch hello.txt
 * **Run regardless of success**: `;`
 
 ---
+## Examples of all the Commands 
+
+![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_35c5a9a9-1.jpg>) ![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_42814d6f-1.jpg>) ![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_f71f3e6a-1.jpg>)
+
