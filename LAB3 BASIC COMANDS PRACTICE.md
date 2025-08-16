@@ -246,6 +246,4 @@ mkdir test && cd test && touch hello.txt
 
 ---
 ## Examples of all the Commands 
-
-![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_35c5a9a9-1.jpg>) ![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_42814d6f-1.jpg>) ![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_f71f3e6a-1.jpg>)
-
+![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_2f08e209.jpg>) ![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_6bbdb55c.jpg>) ![alt text](<WhatsApp Image 2025-08-16 at 10.00.11_d83066d2.jpg>)
