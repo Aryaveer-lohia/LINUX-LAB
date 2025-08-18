@@ -200,49 +200,7 @@ Use `q` to quit the manual.
 
 ---
 
-## ✅ 5. **Searching and Finding**
 
-### `find` – Locate Files
-
-```bash
-find . -name "*.txt"
-```
-
-🔍 Finds all `.txt` files in current folder and subfolders.
-
----
-
-### `grep` – Search Inside Files
-
-```bash
-grep "hello" file.txt
-```
-
-🔍 Searches for the word `hello` inside `file.txt`.
-
----
-
-## ✅ 6. **Helpful Shortcuts**
-
-| Shortcut   | Action                      |
-| ---------- | --------------------------- |
-| `Tab`      | Auto-complete files/folders |
-| `↑ / ↓`    | Browse command history      |
-| `CTRL + C` | Stop a running command      |
-| `CTRL + L` | Clear screen                |
-
----
-
-## ✅ 7. **Bonus: Chaining Commands**
-
-* **Run multiple commands**:
-
-```bash
-mkdir test && cd test && touch hello.txt
-```
-
-* **Run only if previous command succeeds**: `&&`
-* **Run regardless of success**: `;`
 
 ---
 ## Examples of all the Commands 
