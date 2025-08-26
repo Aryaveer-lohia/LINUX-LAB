@@ -108,7 +108,7 @@ rm file.txt          # Delete file
 rm -r folder_name    # Delete folder (recursively)
 ```
 
-⚠️ **Be careful!** There is no undo.
+⚠️ **WARNING!** There is no undo.
 
 ---
 
