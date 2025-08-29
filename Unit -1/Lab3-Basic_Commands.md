@@ -13,9 +13,7 @@ pwd
 
 📌 Output example:
 
-```
-/Users/yourname/projects
-```
+![alt text](1-1.jpg)
 
 ---
 
@@ -26,7 +24,9 @@ Lists files and folders in the current directory.
 ```bash
 ls
 ```
-
+![
+](2-1.jpg)
+![alt text](3-1.jpg)
 * `ls -l` → Detailed list (permissions, size, date)
 * `ls -a` → Shows hidden files (those starting with `.`)
 * `ls -la` → Combined
@@ -62,7 +62,7 @@ Creates a new folder.
 ```bash
 mkdir new_folder
 ```
-
+![alt text](4-1.jpg)
 ---
 
 ### `touch` – Create File
@@ -94,7 +94,7 @@ cp -r folder1 folder2
 ```bash
 mv oldname.txt newname.txt
 ```
-
+![alt text](5-1.jpg)
 ```bash
 mv file.txt ~/Documents/     # Move file
 ```
