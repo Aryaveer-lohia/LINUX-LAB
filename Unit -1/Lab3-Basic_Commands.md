@@ -1,7 +1,7 @@
 # Linux Basic Commands
 
 ## ✅ 1. **Navigation Commands 🧭**
-![alt text](image.png)
+![alt text](image-12.png)
 
 ### `pwd` – Print Working Directory
 
