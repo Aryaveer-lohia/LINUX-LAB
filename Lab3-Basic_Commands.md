@@ -67,6 +67,8 @@ mkdir new_folder
 
 Creates an empty file.
 
+![alt text](image-5.png)
+
 ```bash
 touch file.txt
 ```
