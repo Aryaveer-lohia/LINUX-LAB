@@ -12,9 +12,7 @@ pwd
 
 📌 Output example:
 
-```
-aaaaa
-```
+![alt text](<picture one-1.jpg>)
 
 ---
 
@@ -25,7 +23,7 @@ Lists files and folders in the current directory.
 ```bash
 ls
 ```
-
+![alt text](<WhatsApp Image 2025-09-05 at 00.20.51_2cc02e79.jpg>)
 * `ls -l` → Detailed list (permissions, size, date)
 * `ls -a` → Shows hidden files (those starting with `.`)
 * `ls -la` → Combined
@@ -55,12 +53,14 @@ cd ~                # Go to home directory
 
 ### `mkdir` – Make Directory
 ![alt text](image-2.png)
+
 Creates a new folder.
+
 
 ```bash
 mkdir new_folder
 ```
-
+![alt text](<WhatsApp Image 2025-09-05 at 00.24.27_3f351559-1.jpg>)
 ---
 
 ### `touch` – Create File
