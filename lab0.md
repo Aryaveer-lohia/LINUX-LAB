@@ -10,6 +10,8 @@ Developed by Linus Torvalds in 1991, Linux is known for its stability, security,
 
 ## STEP 1 : DOWNLOAD VIRTUALBOX FILE
 
+![alt text](01-VirtualBox-Download-Website.avif)
+
 1. Go to the VirtualBox Website
 2. Select your operating system
 
@@ -34,6 +36,9 @@ By downloading, you agree to the terms and conditions of the respective license.
 ---
 
 ## STEP 2: INSTALLING VIRTUAL BOX
+
+
+![alt text](vbox-intro.png)
 
 **1. The beginning**  
 Oracle VM VirtualBox 7.0.8 Setup
@@ -71,6 +76,9 @@ You can import, add, and create new VMs using corresponding toolbar buttons.
 ---
 
 ## STEP 3: INSTALLING LINUX USING VIRTUALBOX
+
+
+![alt text](2023_04_How-to-Install-Linux-using-Virtualbox-2.jpg)
 
 **1. Naming virtual machine**
 
@@ -112,6 +120,28 @@ YOU HAVE SUCCESSFULLY INSTALLED THE UBUNTU LINUX.
 
 ---
 
+### RUNNING BASIC COMMANDS IN UBUNTU TERMINAL 
+```bash 
+lsb_release -a
+```
+![alt text](1.jpg)
+```bash
+uname -a
+```
+
+![alt text](2.jpg)
+```bash
+df -h
+```
+
+![alt text](3.jpg)
+```bash
+free -m 
+```
+
+![alt text](4.jpg)
+
+---
 ### Q1: What are two advantages of installing Ubuntu in VirtualBox?
 
 - 1. Safe testing environment
@@ -121,6 +151,3 @@ YOU HAVE SUCCESSFULLY INSTALLED THE UBUNTU LINUX.
 
 - 1. Full hardware performance
 - 2. Better graphics & GPU support
-
-##output of ubuntu terminal comands
- ![alt text](<WhatsApp Image 2025-09-10 at 23.01.46_25aaad41.jpg>)
