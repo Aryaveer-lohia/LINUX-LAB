@@ -11,7 +11,9 @@ cat << 'EOF' > lab1.md
 *Shows the current location in the filesystem.*
 
 **Output example:**  
-`/home/HPVICTUS/Deskstop/vg/linux_lab`
+```bash
+/home/ubuntu
+```
 
 ---
 
@@ -21,9 +23,58 @@ cat << 'EOF' > lab1.md
 - The `ls` command is used to list files and directories in the current working directory.
 - Flag `-a` lists down all files and folders including hidden ones.
 
-  - `ls -l` → Detailed list (permissions, size, date)  
+  - `ls -l` → Detailed list (permissions, size, date)
+
+```bash
+
+  total 0
+drwxr-xr-x 2 ubuntu ubuntu  60 Sep 15  2025 Desktop
+drwxr-xr-x 2 ubuntu ubuntu  40 Sep 15  2025 Documents
+drwxr-xr-x 2 ubuntu ubuntu  40 Sep 15  2025 Downloads
+drwxr-xr-x 2 ubuntu ubuntu  40 Sep 15  2025 Music
+drwxr-xr-x 3 ubuntu ubuntu  60 Sep 15 12:58 Pictures
+drwxr-xr-x 2 ubuntu ubuntu  40 Sep 15  2025 Public
+drwx------ 5 ubuntu ubuntu 100 Sep 15 12:58 snap
+drwxr-xr-x 2 ubuntu ubuntu  40 Sep 15  2025 Templates
+drwxr-xr-x 2 ubuntu ubuntu  40 Sep 15  2025 Videos
+
+```  
   - `ls -a` → Shows hidden files (those starting with .)  
+ 
+ 
+```bash 
+
+  .   .bash_logout  .cache   Desktop    Downloads  .gvfs   Music     .profile  snap  .sudo_as_admin_successful  Videos
+..  .bashrc       .config  Documents  .gnupg     .local  Pictures  Public    .ssh  Templates
+
+```
+
+
   - `ls -la` → Combined
+```bash 
+total 12
+drwxr-x--- 17 ubuntu ubuntu  420 Sep 15 12:52 .
+drwxr-xr-x  1 root   root     80 Sep 15  2025 ..
+-rw-r--r--  1 ubuntu ubuntu  220 Sep 15  2025 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu 3771 Sep 15  2025 .bashrc
+drwx------  9 ubuntu ubuntu  200 Sep 15 12:58 .cache
+drwxr-xr-x 14 ubuntu ubuntu  440 Sep 15 13:08 .config
+drwxr-xr-x  2 ubuntu ubuntu   60 Sep 15  2025 Desktop
+drwxr-xr-x  2 ubuntu ubuntu   40 Sep 15  2025 Documents
+drwxr-xr-x  2 ubuntu ubuntu   40 Sep 15  2025 Downloads
+drwx------  2 ubuntu ubuntu   80 Sep 15 12:52 .gnupg
+drwx------  2 ubuntu ubuntu   40 Sep 15  2025 .gvfs
+drwx------  4 ubuntu ubuntu   80 Sep 15  2025 .local
+drwxr-xr-x  2 ubuntu ubuntu   40 Sep 15  2025 Music
+drwxr-xr-x  3 ubuntu ubuntu   60 Sep 15 12:58 Pictures
+-rw-r--r--  1 ubuntu ubuntu  807 Sep 15  2025 .profile
+drwxr-xr-x  2 ubuntu ubuntu   40 Sep 15  2025 Public
+drwx------  5 ubuntu ubuntu  100 Sep 15 12:58 snap
+drwx------  2 ubuntu ubuntu   40 Sep 15 12:52 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Sep 15 12:52 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu   40 Sep 15  2025 Templates
+drwxr-xr-x  2 ubuntu ubuntu   40 Sep 15  2025 Videos
+```
 
 ---
 
@@ -33,6 +84,20 @@ cat << 'EOF' > lab1.md
 
 
 **Examples:**
+```bash 
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ubuntu@ubuntu:~$ cd Documents/
+ubuntu@ubuntu:~/Documents$ cd ~
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ubuntu@ubuntu:~$ cd Documents/
+ubuntu@ubuntu:~/Documents$ cd ..
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ubuntu@ubuntu:~$
+```
+
 
 ---
 
@@ -40,41 +105,32 @@ cat << 'EOF' > lab1.md
 
 ### mkdir – Make Directory
 
+![alt text](5.jpg)
+
 *Creates a new folder.*
 
 
 ### touch – Create File
 
+![alt text](6.jpg)
+
 *Creates an empty file.*
 
 
-### cp – Copy Files or Directories
-
-
-### mv – Move or Rename Files
-
-
-### rm – Remove Files
-
-⚠️ *Be careful! There is no undo.*
-
----
 
 ## ✅ 3. File Viewing & Editing
 
 ### cat – View File Contents
 
+![alt text](7.jpg)
+
 *Displays content in terminal.*
 
-### nano – Edit Files in Terminal
-
-*A basic terminal-based text editor.*
-
-- Use arrows to move.
-- CTRL + O to save.
-- CTRL + X to exit.
-
 ### clear – Clears the Terminal
+
+```bash
+ubuntu@ubuntu:~$ clear
+```
 
 *Shortcut: CTRL + L*
 
@@ -86,31 +142,21 @@ cat << 'EOF' > lab1.md
 
 ### echo – Print Text
 
+```bash
+ubuntu@ubuntu:~/Desktop/file$ echo "hello world"
+hello world
+```
 
 ### whoami – Show Current User
 
-
-### man – Manual for Any Command
-
-*Use q to quit the manual.*
-
----
-
-## ✅ 5. Searching and Finding
-
-### find – Locate Files
-
-*Finds all .txt files in current folder and subfolders.*
-
-
-### grep – Search Inside Files
-
-*Searches for the word 'hello' inside file.txt.*
+![alt text](8.jpg)
 
 
 ---
 
-## ✅ 6. Helpful Shortcuts
+
+
+## ✅ 5. Helpful Shortcuts
 
 | Shortcut   | Action                         |
 | ---------- | ----------------------------- |
@@ -119,13 +165,7 @@ cat << 'EOF' > lab1.md
 | CTRL + C   | Stop a running command         |
 | CTRL + L   | Clear screen                   |
 
----
 
-## ✅ 7. Bonus: Chaining Commands
-
-- Run multiple commands:
-  - *Run only if previous command succeeds*: `&&`
-  - *Run regardless of success*: `;`
 
 
 ---
@@ -195,40 +235,9 @@ Modes can be set in numeric (octal) or symbolic form.
 
 ---
 
-### 🔹 3. chown – Change File Ownership
-
-**Syntax**
-
-**Examples:**
-
-#### Practice Experiment on chown
-
-1. Create a new user  
-   `sudo useradd -m newuser`
-2. Create a new group  
-   `sudo groupadd newgroup`
-3. Add the user to the group  
-   `sudo usermod -aG newgroup newuser`
-4. Create a file (as current user, e.g. root or your login user)  
-   `touch testfile.txt`  
-   `ls -l testfile.txt`
-5. Assign ownership of the file to newuser and newgroup  
-   `sudo chown newuser:newgroup testfile.txt`
-6. Verify ownership  
-   `ls -l testfile.txt`
-
-*Output:*
-
----
-
-### 🔹 4. Putting It All Together
-
-**Example Scenario**
 
 
----
-
-### 🔹 5. Quick Reference Table
+### 🔹 3. Quick Reference Table
 
 | Numeric | Permission | Meaning        |
 | ------- | ---------- | ------------- |
@@ -254,7 +263,3 @@ Modes can be set in numeric (octal) or symbolic form.
 
 - ans = by using the `pwd` command.
 
-
-
-## answer of all the commands in assignment:
-![alt text](two.txt.jpg)
