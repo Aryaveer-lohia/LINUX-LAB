@@ -1,35 +1,29 @@
 #!/bin/bash
-# gcd_lcm.sh
-# Usage: ./gcd_lcm.sh 24 36
+# factorial.sh
+# Usage: ./factorial.sh 5
 
-if [ $# -ne 2 ]; then
-  echo "Usage: $0 <int1> <int2>"
-  exit 1
-fi
-
-a=$1; b=$2
-if ! [[ $a =~ ^[0-9]+$ ]] || ! [[ $b =~ ^[0-9]+$ ]]; then
-  echo "Both arguments must be non-negative integers."
-  exit 1
-fi
-
-# GCD using Euclidean algorithm
-gcd() {
-  x=$1; y=$2
-  while [ "$y" -ne 0 ]; do
-    t=$(( x % y ))
-    x=$y
-    y=$t
+fact() {
+  n=$1
+  if [ "$n" -le 1 ]; then
+    echo 1
+    return
+  fi
+  res=1
+  for ((i=2;i<=n;i++)); do
+    res=$(( res * i ))
   done
-  echo "$x"
+  echo "$res"
 }
 
-g=$(gcd "$a" "$b")
-if [ "$g" -eq 0 ]; then
-  lcm=0
-else
-  lcm=$(( (a / g) * b ))
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <non-negative-integer> [another ...]"
+  exit 1
 fi
 
-echo "GCD($a,$b) = $g"
-echo "LCM($a,$b) = $lcm"
+for arg in "$@"; do
+  if ! [[ $arg =~ ^[0-9]+$ ]]; then
+    echo "$arg: not a non-negative integer, skipping."
+    continue
+  fi
+  echo "$arg! = $(fact "$arg")"
+done
