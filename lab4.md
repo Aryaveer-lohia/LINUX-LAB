@@ -43,7 +43,7 @@ done
 Commands executed to create test files:
 
 ```bash
-# Example commands
+Example commands
 touch file1.txt file2.txt notes.txt
 ls -l
 ```
@@ -60,11 +60,12 @@ Command to verify the backup:
 
 ```bash
 ls -l backup/
-# Expected output showing files with timestamps:
-# file1_20251106_102317.txt
-# file2_20251106_102317.txt
-# notes_20251106_102317.txt
+
 ```
+#### Expected output showing files with timestamps:
+#### file1_20251106_102317.txt
+#### file2_20251106_102317.txt
+#### notes_20251106_102317.txt
 
 ---
 
